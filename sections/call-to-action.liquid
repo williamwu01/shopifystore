@@ -1,0 +1,41 @@
+{{ 'call-to-action.css' | asset_url | stylesheet_tag }}
+
+  <h2>{{ section.settings.text-box }}</h2>
+  <a href="{{ section.settings.link }}">
+    {{ section.settings.linktext }}
+  </a>
+
+
+{% schema %}
+{
+  "name": "Call to action",
+	"tag": "section",
+	"class": "call-to-action",
+  "settings": [
+    {
+      "id": "text-box",
+      "type": "text",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "id": "link",
+      "type": "url",
+      "label": "Link URL"
+    },
+    {
+      "id": "linktext",
+      "type": "text",
+      "label": "Link text",
+      "default": "Click here"
+    }
+  ]
+  ,
+  "presets": [
+    {
+      "name": "Call to Action",
+      "category": "Promotional"
+    }
+  ]
+}
+{% endschema %}

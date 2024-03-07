@@ -1,0 +1,11 @@
+.testimonial {
+	text-align: center;
+	margin: 6rem 0;
+	padding: 0 1rem;
+}
+
+.testimonial a {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 1rem 2rem;
+}
